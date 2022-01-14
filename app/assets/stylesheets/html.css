@@ -1,0 +1,6 @@
+html {
+    max-width: 1240px;
+    min-width: 768px;
+    height: 100%;
+    margin: 2em auto;
+}
