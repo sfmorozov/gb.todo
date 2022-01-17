@@ -1,0 +1,15 @@
+.nav{
+    display: block;
+}
+ul{
+    display: flex;
+    padding-left: 0px
+}
+li{
+    list-style: none;
+    position: relative;
+    padding: 0 0 0 15px;
+}
+li:first-of-type{
+    padding: 0px;
+}
