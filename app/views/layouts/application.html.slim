@@ -20,9 +20,11 @@ html
           = link_to_unless_current 'Помощь', help_index_path
         li 
           = link_to_unless_current 'О нас', about_index_path
+        li 
+          = link_to_unless_current '#', count_show_path
     .content
       = yield
     
     .footer
       p
-        '2022 &copy;
+        | 2022 &copy;
