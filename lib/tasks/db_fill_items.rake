@@ -9,7 +9,7 @@ namespace :db do
       args.params.to_i.times do
         Item.create(
           name: FFaker::LoremRU.word,
-          events_id: Event.all.ids.sample(1)[0]
+          events_id: Event.all.ids.sample
         )
       end
     else

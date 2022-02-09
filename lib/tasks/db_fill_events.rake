@@ -10,7 +10,7 @@ namespace :db do
         Event.create(
           name: FFaker::LoremRU.word,
           content: FFaker::LoremRU.phrase,
-          user_id: User.all.ids.sample(1)[0]
+          user_id: User.all.ids.sample
         )
       end
     else

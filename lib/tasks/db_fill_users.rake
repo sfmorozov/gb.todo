@@ -10,7 +10,7 @@ namespace :db do
         User.create(
           name: FFaker::NameRU.name,
           email: FFaker::Internet.email,
-          role_id: Role.all.ids.sample(1)[0]
+          role_id: Role.all.ids.sample
         )
       end
     else

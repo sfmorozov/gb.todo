@@ -5,6 +5,6 @@ ROLE_LIST = {
   moder: 'Модератор',
   user: 'Пользователь'
 }.freeze
-USERS = 2
-EVENTS = 10
-ITEMS = 5
+USERS = 10
+EVENTS = 20
+ITEMS = 50
