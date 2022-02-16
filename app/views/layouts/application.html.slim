@@ -21,6 +21,8 @@ html
         li 
           = link_to_unless_current 'О нас', about_index_path
         li 
+          = link_to_unless_current 'Статистика', stats_index_path
+        li 
           = link_to_unless_current '#', count_show_path
     .content
       = yield

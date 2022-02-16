@@ -1,0 +1,22 @@
+h2 
+  | Статистика
+br
+   table
+    tr 
+      th = 'Имя'
+      th = 'Почта'
+      th = 'Активен?'
+      th = 'Всего задач'
+      th = 'Активные задачи'
+      th = 'Пункты'
+      th = 'Активные пункты'
+    - User.order(:name).each do |user|
+      tr
+       td = user.name
+       td = user.email
+       td = user.active
+       td = Event.where(user_id: user.id).count
+       td = Event.where(user_id: user.id, done: false).count
+       td = Item.where(events_id: Event.where(user_id: user.id).ids).count
+       td = Item.where(events_id: Event.where(user_id: user.id, done: false).ids).count
+
