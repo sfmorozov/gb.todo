@@ -55,7 +55,7 @@ if Event.all.ids.count.positive?
   ITEMS.times do
     Item.create(
       name: FFaker::LoremRU.word,
-      events_id: Event.all.ids.sample
+      event_id: Event.all.ids.sample
     )
   end
 else

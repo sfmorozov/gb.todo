@@ -7,7 +7,7 @@ class CreateItems < ActiveRecord::Migration[6.1]
       t.boolean :done, default: false,
                        comment: 'Состояние: завершено-не завершено'
       t.datetime :finished_at, comment: 'Дата и время завершения'
-      t.references :events, foreign_key: true,
+      t.references :event, foreign_key: true,
                             comment: 'Внешний ключ к таблице Events'
 
       t.timestamps
